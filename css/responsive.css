@@ -1,0 +1,111 @@
+@media (min-width: 410px) and (min-height:736px){
+    .head{
+        min-height: 600px !important;
+    }
+
+    .hijau img{ 
+        width: 414px;
+    }
+
+    .school{
+        left: 155px;
+    }
+
+    .oval{
+        left: 87px;
+    }
+
+    .prodi{
+        margin-top:5em !important;
+    }
+}
+
+@media only screen and (min-width:320px) and (height:568px){
+    .school{
+        left: 109px;
+    }
+
+    .hijau img{ 
+        width: 414px !important;
+    }
+
+    .head{
+        min-height: 569px !important;
+    }
+
+    .start{
+        padding-right: 2em;
+    }
+}
+
+@media only screen and (min-width:320px) and (height:480px){
+    .school{
+        left: 109px;
+    }    
+}
+
+@media only screen and (min-width:370px) and (height:667px){
+    .school{
+        left: 132px;
+    }
+
+    .hijau img{ 
+        width: 414px !important;
+    }
+
+    .head{
+        min-height: 593px !important;
+    }
+
+    .start{
+        padding-right: 0em;
+    }
+
+    .prodi{
+        margin-top: 5em !important;
+    }
+}
+
+@media only screen and (min-width:360px) and (height:640px){
+    .school{
+        left: 132px;
+    }
+
+    .hijau img{ 
+        width: 414px !important;
+    }
+
+    .head{
+        min-height: 593px !important;
+    }
+
+    .start{
+        padding-right: 0em;
+    }
+
+    .prodi{
+        margin-top: 5em !important;
+    }
+}
+
+@media only screen and (min-width:412px) and (height:732px){
+    .school{
+        left: 153px;
+    }
+
+    .hijau img{ 
+        width: 414px !important;
+    }
+
+    .head{
+        min-height: 593px !important;
+    }
+
+    .start{
+        padding-right: 0em;
+    }
+
+    .prodi{
+        margin-top: 5em !important;
+    }
+}
