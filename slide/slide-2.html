@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+
+  <!-- MyCSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- Subject -->
+    <div class="container">
+      <div class="row subject">
+        <div class="col text-center p-2">
+          <h1 class="m-0">PENDAHULUAN</h1>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col" style="background-color: #086788; width: 360px; height: 20px; border-radius: 0 0 8px 8px">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End Subject -->
+  </header>
+  <!-- End header -->
+
+  <!-- Main -->
+  <main class="slide-2 overflow-hidden position-relative" id="slide-2">
+    <div class="container">
+      <div id="menu-opener" class="menu-opener d-inline-block d-none" onclick="menu()">
+        <img src="../img/menu.svg" alt="menu-opener" width="24px">
+      </div>
+      
+
+      <!-- Content -->
+      <div class="row mb-2">
+        <!-- menu -->        
+        <nav class="col-5 py-2 mb-3 myMenu">
+          <!-- closed btn  -->
+          <div id="menu-closer" class="menu-closer d-inline-block mb-2" onclick="menu()">
+            <img src="../img/close-black.svg" alt="menu-closer" width="24px">
+          </div>
+          <!-- end closed btn  -->
+          <a class="btn btn-aktif mb-2" href="slide-2.html" role="button">PENDAHULUAN</a>
+          <a class="btn mb-2" href="#" role="button">KOMPETENSI INTI</a>
+          <a class="btn mb-2" href="#" role="button" style="line-height: 17px">KOMPETENSI DASAR</a>
+          <a class="btn mb-2" href="#" role="button">INDIKATOR</a>
+          <a class="btn mb-2" href="#" role="button">MATERI</a>
+          <a class="btn mb-2" href="#" role="button">CONTOH SOAL</a>
+          <a class="btn mb-2" href="#" role="button">VIDEO</a>
+          <a class="btn mb-2" href="#" role="button">EVALUASI</a>
+          <a class="btn mb-2" href="#" role="button">PENUTUP</a>
+        </nav>
+
+        <!-- end menu -->
+        <!-- materi -->
+        <div class="col materi">
+          <!-- <p class="d-block p-2 text-center" style="font-size: 3.15vw; border: 1px solid #086788; border-radius: 11px">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam natus nostrum alias odit, voluptatibus
+            culpa libero fuga praesentium molestias quidem eos corrupti sunt quo at architecto rerum, ipsa deserunt?
+            Corporis!
+          </p> -->
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla aliquam ullam aperiam
+                possimus repudiandae accusamus, similique nesciunt ex quia id odit praesentium architecto accusantium
+                fuga ipsa sapiente, perferendis officiis quasi?</p>
+            </div>
+          </div>
+          <img class="my-1" src="../img/slide2.png" alt="" style="width: 100%" />
+        </div>
+        <!-- end materi -->
+      </div>
+      <!-- End Content -->
+    </div>
+  </main>
+  <!-- End Main -->
+
+  <!-- Footer -->
+  <footer class="row mx-auto">
+    <div class="col nextprev col nextprev d-flex align-items-center justify-content-between">
+      <a class="prev" href="../index.html">❮ Back</a>
+      <div class="no-slide">2</div>
+      <a class="next" href="slide-3.html">Next ❯</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+  <script src="../js/myFunction.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
