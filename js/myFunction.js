@@ -1,5 +1,5 @@
 function menu() {
-    const btnOpener = document.querySelector('.menu-opener');
+    const btnOpener = document.querySelector('.opener-btn');
     const btnCloser = document.querySelector('.menu-closer');
     const menu = document.querySelector('.myMenu');
 
