@@ -8,7 +8,7 @@ body {
   background: linear-gradient(221deg, rgba(245,251,255,1) 13%, rgba(193,234,255,1) 55%, rgba(49,188,255,1) 93%);
 }
 
-body p {
+body p, main pre {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -52,6 +52,10 @@ main p{
 
 .card {
   background-color: #ffa0d0;
+}
+
+.text-indent{
+  text-indent: 35px;
 }
 
 .name {
