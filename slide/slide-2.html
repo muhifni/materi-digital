@@ -38,11 +38,30 @@
 
   </nav>
 
-  <div class="container opener-btn">
-    <div id="menu-opener" class="menu-opener d-inline-block mb-3" onclick="menu()">
+  <div class="container ">
+    <div id="menu-opener" class="opener-btn menu-opener d-inline-block mb-3" onclick="menu()">
       <img src="../img/menu.svg" alt="menu-opener" width="24px">
     </div>
   </div>
+
+
+  <div class="container music-on-btn text-end d-none">
+    <div id="music-on" class="music-on mb-3 d-inline-block" onclick="musicOff()">
+      <img src="../img/volume-on.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+  <div class="container music-off-btn text-end">
+    <div id="music-off" class="music-off mb-3 d-inline-block" onclick="musicOn()">
+      <img src="../img/volume-off.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+
+  <div class="music">
+    <audio id="music" autoplay loop>
+      <source src="https://res.cloudinary.com/dgpikum8r/video/upload/v1629515971/music_v6rnwy.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
 
   <!-- Main -->
   <main class="slide-2 py-5 px-3 position-absolute top-50 start-50 translate-middle" id="slide-2" style="width: 100%;">
@@ -56,7 +75,7 @@
               <h2 class="card-title text-whtie">VEKTOR</h2>
               <h5 class="card-text">KELAS X SEMESTER 1<br>SMA/MA</h5>
             </div>
-          </div>          
+          </div>
         </div>
         <!-- end materi -->
       </div>

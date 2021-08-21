@@ -7,3 +7,28 @@ function menu() {
     btnCloser.classList.toggle('d-none');
     menu.classList.toggle('d-none');
 }
+
+
+// Click image to full size
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+// music
+const musicOnBtn = document.querySelector('.music-on-btn');
+const musicOffBtn = document.querySelector('.music-off-btn');
+
+const music = document.getElementById('music');
+
+function musicOn() {
+  music.play();
+  musicOffBtn.classList.toggle('d-none')
+  musicOnBtn.classList.toggle('d-none')
+}
+
+function musicOff() {
+  music.pause();
+  musicOffBtn.classList.toggle('d-none')
+  musicOnBtn.classList.toggle('d-none')
+}
