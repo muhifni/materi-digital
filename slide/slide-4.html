@@ -44,6 +44,23 @@
     </div>
   </div>
 
+  <div class="container music-on-btn text-end d-none">
+    <div id="music-on" class="music-on mb-3 d-inline-block" onclick="musicOff()">
+      <img src="../img/volume-on.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+  <div class="container music-off-btn text-end">
+    <div id="music-off" class="music-off mb-3 d-inline-block" onclick="musicOn()">
+      <img src="../img/volume-off.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+
+  <div class="music">
+    <audio id="music" autoplay loop>
+      <source src="https://res.cloudinary.com/dgpikum8r/video/upload/v1629515971/music_v6rnwy.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
   <!-- Main -->
   <main class="slide-2 py-5 px-3 position-absolute top-50 start-50 translate-middle" id="slide-2" style="width: 100%;">
     <div class="container">
@@ -53,9 +70,9 @@
         <div class="col materi">
           <div class="card text-center">
             <div class="card-body">
-              <h2 class="card-title text-whtie">PETUNJUK PENGGUNAAN</h2>              
+              <h2 class="card-title text-whtie">PETUNJUK PENGGUNAAN</h2>
             </div>
-          </div>          
+          </div>
         </div>
         <!-- end materi -->
       </div>

@@ -66,45 +66,62 @@
     </div>
   </div>
 
+  <div class="container music-on-btn text-end d-none">
+    <div id="music-on" class="music-on mb-3 d-inline-block" onclick="musicOff()">
+      <img src="../img/volume-on.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+  <div class="container music-off-btn text-end">
+    <div id="music-off" class="music-off mb-3 d-inline-block" onclick="musicOn()">
+      <img src="../img/volume-off.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+
+  <div class="music">
+    <audio id="music" autoplay loop>
+      <source src="https://res.cloudinary.com/dgpikum8r/video/upload/v1629515971/music_v6rnwy.mp3" type="audio/mpeg">
+    </audio>
+  </div>
 
 
   <!-- Main -->
   <main class="slide-2" id="slide-2">
     <div class="container">
-      <!-- Content -->
-
-      <div class="text-center mb-4">
-        <img src="https://imgur.com/mr63Q5o.png" style="width:70%;cursor:pointer" onclick="onClick(this)" alt="rumus">
-        <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-          <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-          <div class="w3-modal-content w3-animate-zoom">
-            <img id="img01" style="width:100%">
-          </div>
-        </div>
-      </div>
-
+      <!-- Content -->      
       <div class="row mb-2 mx-3">
         <!-- materi -->
-        <div class="col-12 materi mb-4">
+        <div class="col-12 materi my-4">
           <div class="card">
             <div class="card-body">
+              <h4 class="card-title">Skalar</h4>
               <p class="card-text">
-                Dua siswa menuju ke Sekolah SMAN 1 Banjarmasin dengan rute yang berbeda dari rumah yang sama di
-                Kayutangi Cendana, siswa 1 menuju ke sekolah dengan rute jalan Cendana, Emir Café dan Resto, Gadget
-                Mart, Polda, tempat cuci helm sampai di SMAN 1 Banjarmasin dan siswa 2 menuju ke sekolah dengan jalan
-                Cendana, jalan Emir Café dan Resto, Universitas Muhamdiyah, tempat cuci helm sampai di SMAN 1
-                Banjarmasin Jadi manakah jarak paling jauh yang ditempuh dua siswa tersebut dari rumah hingga ke
-                Sekolah? Manakah perpindahan paling jauh dari dua siswa tersebut?
+                Besaran skalar adalah besaran yang cukup dinyatakan oleh besarnya saja tanpa menyatakan arahnya
               </p>
+              <ul>
+                <li>Masa</li>
+                <li>Waktu</li>
+                <li>Jarak</li>
+                <li>Kelajuan</li>
+                <li>Dan lain-lain</li>
+              </ul>
             </div>
           </div>                  
         </div>
-        <div class="col bg-white p-2">
-          <p>
-            Indikator Pencapaian Kompetensi (IPK) <br>
-            3.3.1 Menjelaskan perbedaan besaran vektor dan besaran skalar.<br>
-            3.3.2 Menggambarkan suatu vektor jika besar dan arahnya diketahui.
-          </p>
+        <div class="col-12 materi mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h4 class="card-title">Vektor</h4>
+              <p class="card-text">
+                Besaran vektor adalah besaran yang harus dinyatakan oleh besar dan arahnya.
+              </p>
+              <ul>
+                <li>Perpindah</li>
+                <li>Gaya</li>
+                <li>Percepatan</li>                
+                <li>Dan lain-lain</li>
+              </ul>
+            </div>
+          </div>                  
         </div>  
         <!-- end materi -->
       </div>

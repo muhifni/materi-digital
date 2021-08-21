@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;">
+<html lang="en">
 
 <head>
   <!-- Required meta tags -->
@@ -11,6 +11,9 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
   <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
 
+  <!-- W3Shcool CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
   <!-- MyCSS -->
   <link rel="stylesheet" href="../css/style.css" />
 
@@ -18,6 +21,25 @@
 </head>
 
 <body>
+  <!-- header -->
+  <header>
+    <!-- Subject -->
+    <div class="container">
+      <div class="row subject">
+        <div class="col text-center p-2">
+          <h4 class="m-0">Knowledge</h4>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col" style="background-color: #ffa0d0; width: 360px; height: 20px; border-radius: 0 0 8px 8px">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End Subject -->
+  </header>
+  <!-- End header -->
+
   <nav class="py-2 px-3 myMenu ms-2 d-none">
     <div class="myMenu-child">
       <!-- closed btn  -->
@@ -25,11 +47,11 @@
         <img src="../img/close-black.svg" alt="menu-closer" width="16px">
       </div>
       <!-- end closed btn  -->
-      <a class="btn mb-2" href="slide-2.html" role="button">KATA PENGANTAR</a>
-      <a class="btn btn-aktif mb-2" href="slide-4.html" role="button">PETUNJUK PENGGUNAAN</a>
+      <a class="btn mb-2" href="slide-3.html" role="button">KATA PENGANTAR</a>
+      <a class="btn mb-2" href="slide-4.html" role="button">PETUNJUK PENGGUNAAN</a>
       <a class="btn mb-2" href="slide-6.html" role="button">KD</a>
       <a class="btn mb-2" href="#" role="button">PETA KONSEP</a>
-      <a class="btn mb-2" href="#" role="button">MATERI</a>
+      <a class="btn btn-aktif mb-2" href="#" role="button">MATERI</a>
       <a class="btn mb-2" href="#" role="button">SIMULASI</a>
       <a class="btn mb-2" href="#" role="button">UJI KOMPETENSI</a>
       <a class="btn mb-2" href="#" role="button">REFERENSI</a>
@@ -61,50 +83,51 @@
     </audio>
   </div>
 
-  <!-- Main -->
-  <main class="slide-2 py-5 px-3" id="slide-2" style="width: 100%;">
-    <div class="container">
-      <div class="position-absolute top-50 start-50 translate-middle" style="width: 90%;">
-        <!-- Content -->
-        <div class="row mb-1 justify-content-between">
-          <!-- materi -->
-          <div class="col-sm-6 mb-3 materi">
-            <div class="card text-center">
-              <a class="card-body" href="slide-9-pertemuan1.html">
-                <h2 class="card-title text-whtie">PERTEMUAN 1</h2>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-6 mb-3 materi">
-            <div class="card text-center">
-              <div class="card-body">
-                <h2 class="card-title text-whtie">PERTEMUAN 2</h2>
-              </div>
-            </div>
-          </div>
-          <!-- end materi -->
-        </div>
-        <div class="row mb-2 justify-content-between">
-          <!-- materi -->
-          <div class="col-sm-6 mb-3 materi">
-            <div class="card text-center">
-              <div class="card-body">
-                <h2 class="card-title text-whtie">PERTEMUAN 3</h2>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-6 mb-3 materi">
-            <div class="card text-center">
-              <div class="card-body">
-                <h2 class="card-title text-whtie">PERTEMUAN 4</h2>
-              </div>
-            </div>
-          </div>
-          <!-- end materi -->
-        </div>
-        <!-- End Content -->
-      </div>
 
+  <!-- Main -->
+  <main class="slide-2" id="slide-2">
+    <div class="container">
+      <!-- Content -->
+      <div class="row mb-2 mx-3 justify-content-center">
+        <!-- materi -->
+        <div class="col-sm-6 materi my-4">
+          <div class="card">
+            <div class="card-body">
+              <div class="card-text">
+                <h4>*Mr. Budi mampir ke warung :)</h4>
+              </div>
+            </div>
+            <div class="text-center p-3">
+              <img class="card-img-top" src="https://imgur.com/vmOLeh9.png" style="width: 100%;cursor:pointer"
+                onclick="onClick(this)" alt="rumus">
+              <figcaption><b>Gambar 1.9</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption>
+              <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                  <img id="img01" style="width:100%">
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">Ditengah jalan, Mr Budi singgah untuk minum es kelapa muda sehingga kekuatannya
+                kembali pulih dan bertambah 2 kali lipat. Maka vektor gaya dorong Mr Budi dapat digambarkan:</p>
+            </div>
+            <div class="text-center p-3">
+              <img class="card-img-top" src="https://imgur.com/2M8FfcX.png" style="width: 80%;cursor:pointer"
+                onclick="onClick(this)" alt="rumus">
+              <!-- <figcaption><b>Gambar 1.8</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+              <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                <div class="w3-modal-content w3-animate-zoom">
+                  <img id="img01" style="width:100%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end materi -->
+      </div>
+      <!-- End Content -->
     </div>
   </main>
   <!-- End Main -->
@@ -112,9 +135,9 @@
   <!-- Footer -->
   <footer class="row mx-auto">
     <div class="col nextprev col nextprev d-flex align-items-center justify-content-between">
-      <a class="prev" href="slide-4.html">❮ Back</a>
-      <div class="no-slide">5</div>
-      <a class="next" href="slide-6.html">Next ❯</a>
+      <a class="prev" href="slide-16.html">❮ Back</a>
+      <div class="no-slide">17</div>
+      <a class="next" href="slide-18.html">Next ❯</a>
     </div>
   </footer>
   <!-- End Footer -->
