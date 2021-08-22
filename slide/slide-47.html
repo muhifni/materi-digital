@@ -18,6 +18,24 @@
   <link rel="stylesheet" href="../css/style.css" />
 
   <title>Hello, world!</title>
+
+  <style>
+    .true-modal .modal-header,.true-modal .modal-footer{
+      background-color: hsl(116deg 75% 60%);
+    }
+
+    .true-modal .modal-body {
+      background-color: hsl(116deg 100% 81%);
+    }
+
+    .wrong-modal .modal-header, .wrong-modal .modal-footer {
+    background-color: hsl(0deg 60% 48%);
+    }
+
+    .wrong-modal .modal-body {
+    background-color: hsl(0deg 80% 60%);
+}
+  </style>
 </head>
 
 <body>
@@ -27,7 +45,7 @@
     <div class="container">
       <div class="row subject">
         <div class="col text-center p-2">
-          <h4 class="m-0">3. Menyatakan Suatu Vektor</h4>
+          <h2 class="m-0">Uji Kompetensi</h2>
         </div>
       </div>
       <div class="row mb-3">
@@ -53,7 +71,7 @@
       <a class="btn mb-2" href="slide-7.petaKonsep.html" role="button">PETA KONSEP</a>
       <a class="btn mb-2" href="slide-8-materi.html" role="button">MATERI</a>
       <a class="btn mb-2" href="slide-46-pertemuan4.html" role="button">SIMULASI</a>
-      <a class="btn mb-2" href="slide-47.html" role="button">UJI KOMPETENSI</a>
+      <a class="btn mb-2 btn-aktif" href="slide-47.html" role="button">UJI KOMPETENSI</a>
       <a class="btn mb-2" href="slide-53-referensi.html" role="button">REFERENSI</a>
       <a class="btn mb-2" href="slide-54-penyusun.html" role="button">PENYUSUN</a>
     </div>
@@ -90,34 +108,89 @@
       <!-- Content -->
       <div class="row mb-2 mx-3 justify-content-center">
         <!-- materi -->
-        <div class="col-12 materi my-4">
-          <div class="card mb">
+        <div class="col materi my-4">
+          <div class="card">
             <div class="card-body">
               <p class="card-text">
-                Untuk menyatakan suatu vektor kita gunakan sumbu cartesius dengan sumbu mendatar adalah sumbu x dan
-                sumbu vertikal adalah sumbu y, vektor satuan sumbu x diberi lambang <b>i</b> dan vektor satuan pada sumbu y
-                diberi lambang <b>j</b>.
-              </p>
-              <div class="text-center p-3">
-                <img class="card-img-top" src="https://imgur.com/DNKBVrn.png" style="width: 100%;cursor:pointer"
-                  onclick="onClick(this)" alt="rumus">
-                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
-                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-                  <div class="w3-modal-content w3-animate-zoom">
-                    <img id="img01" style="width:100%">
-                  </div>
-                </div>
-              </div>
-              <p class="card-text">
-                Gambar di atas adalah sekumpulan anak yang sedang melakukan permainan Balogo. Bagaimana gerakan logo
-                setelah dipukul jika dilihat dari samping?
+                1. Perhatikan besaran-besaran berikut
+                Kelajuan sebuah sepeda motor yang dilihat pada speedometer, waktu yang diperlukan untuk berlari di
+                lapangan, percepatan jatuh sebuah mangga dari pohon. Besaran-besaran tersebut secara berturut-turut
+                merupakan besaran…….
               </p>
             </div>
           </div>
         </div>
         <!-- end materi -->
       </div>
+
+      <!-- Modal -->
+      <div class="modal fade true-modal" id="trueAnswer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h3 class="fw-bold">YEEEEEEEEE.... Jawaban kamu benaaarrrrr!!!!!</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade wrong-modal" id="wrongAnswer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">            
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h3 class="fw-bold">Netnott.. Jawaban kamu salah :(</h3>
+            <h3 class="fw-bold">SILAKAN COBA LAGI :)</h3>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- end modal -->
+
+      <div class="row mb-2 mx-3 justify-content-center text-center">
+        <div class="col-sm-6 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#trueAnswer">
+            a. skalar, skalar, vektor
+          </button>
+        </div>
+        <div class="col-sm-6 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#wrongAnswer">
+            b. vektor, vektor, skalar
+          </button>
+        </div>
+        <div class="col-sm-6 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#wrongAnswer">
+            c. skalar, skalar, skalar
+          </button>
+        </div>
+        <div class="col-sm-6 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#wrongAnswer">
+            d. vektor, vektor, vektor
+          </button>
+        </div>
+        <div class="col-sm-6 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#wrongAnswer">
+            e. skalar, vektor, vektor
+          </button>
+        </div>
+      </div>
+
+
       <!-- End Content -->
     </div>
   </main>
@@ -126,9 +199,9 @@
   <!-- Footer -->
   <footer class="row mx-auto">
     <div class="col nextprev col nextprev d-flex align-items-center justify-content-between">
-      <a class="prev" href="slide-26.html">❮ Back</a>
-      <div class="no-slide">27</div>
-      <a class="next" href="slide-28.html">Next ❯</a>
+      <a class="prev" href="slide-46-pertemuan4.html">❮ Back</a>
+      <div class="no-slide">47</div>
+      <a class="next" href="slide-48.html">Next ❯</a>
     </div>
   </footer>
   <!-- End Footer -->

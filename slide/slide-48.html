@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
 
 <head>
   <!-- Required meta tags -->
@@ -18,6 +18,26 @@
   <link rel="stylesheet" href="../css/style.css" />
 
   <title>Hello, world!</title>
+
+  <style>
+    .true-modal .modal-header,
+    .true-modal .modal-footer {
+      background-color: hsl(116deg 75% 60%);
+    }
+
+    .true-modal .modal-body {
+      background-color: hsl(116deg 100% 81%);
+    }
+
+    .wrong-modal .modal-header,
+    .wrong-modal .modal-footer {
+      background-color: hsl(0deg 60% 48%);
+    }
+
+    .wrong-modal .modal-body {
+      background-color: hsl(0deg 80% 60%);
+    }
+  </style>
 </head>
 
 <body>
@@ -27,7 +47,7 @@
     <div class="container">
       <div class="row subject">
         <div class="col text-center p-2">
-          <h1 class="m-0">A. Pengertian Vektor</h1>
+          <h2 class="m-0">Uji Kompetensi</h2>
         </div>
       </div>
       <div class="row mb-3">
@@ -87,44 +107,91 @@
   <!-- Main -->
   <main class="slide-2" id="slide-2">
     <div class="container">
-      <!-- Content -->      
-      <div class="row mb-2 mx-3">
+      <!-- Content -->
+      <div class="row mb-2 mx-3 justify-content-center">
         <!-- materi -->
-        <div class="col-12 materi my-4">
+        <div class="col materi my-4">
           <div class="card">
             <div class="card-body">
-              <h4 class="card-title">Skalar</h4>
               <p class="card-text">
-                Besaran skalar adalah besaran yang cukup dinyatakan oleh besarnya saja tanpa menyatakan arahnya
+                2. Ketika logo dipukul menggunakan penapak hingga berbenturan dengan logo lain, logo mendapatkan dua
+                kali gaya dorong yaitu oleh penapak sebesar 15 N dan gaya dorong oleh logo lain saat bertumbukan sebesar
+                9 N, sudut apit 60&deg;. Maka berapa besar resultan dari kedua buah vektor gaya dorong tersebut……….
               </p>
-              <ul>
-                <li>Masa</li>
-                <li>Waktu</li>
-                <li>Jarak</li>
-                <li>Kelajuan</li>
-                <li>Dan lain-lain</li>
-              </ul>
             </div>
-          </div>                  
+          </div>
         </div>
-        <div class="col-12 materi mb-4">
-          <div class="card">
-            <div class="card-body">
-              <h4 class="card-title">Vektor</h4>
-              <p class="card-text">
-                Besaran vektor adalah besaran yang harus dinyatakan oleh besar dan arahnya.
-              </p>
-              <ul>
-                <li>Perpindah</li>
-                <li>Gaya</li>
-                <li>Percepatan</li>                
-                <li>Dan lain-lain</li>
-              </ul>
-            </div>
-          </div>                  
-        </div>  
         <!-- end materi -->
       </div>
+
+      <!-- Modal -->
+      <div class="modal fade true-modal" id="trueAnswer" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="fw-bold">YEEEEEEEEE.... Jawaban kamu benaaarrrrr!!!!!</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade wrong-modal" id="wrongAnswer" data-bs-backdrop="static" data-bs-keyboard="false"
+        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <h3 class="fw-bold">Netnott.. Jawaban kamu salah :(</h3>
+              <h3 class="fw-bold">SILAKAN COBA LAGI :)</h3>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- end modal -->
+
+      <div class="row mb-2 mx-3 justify-content-center text-center">
+        <div class="col-4 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#trueAnswer">
+            a. 21
+          </button>
+        </div>
+        <div class="col-4 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#wrongAnswer">
+            b. 18
+          </button>
+        </div>
+        <div class="col-4 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#wrongAnswer">
+            c. 24
+          </button>
+        </div>
+        <div class="col-4 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#wrongAnswer">
+            d. 28
+          </button>
+        </div>
+        <div class="col-4 mb-3">
+          <button type="button" class="btn  bg-pink" data-bs-toggle="modal" data-bs-target="#wrongAnswer">
+            e. 30
+          </button>
+        </div>
+      </div>
+
+
       <!-- End Content -->
     </div>
   </main>
@@ -133,9 +200,9 @@
   <!-- Footer -->
   <footer class="row mx-auto">
     <div class="col nextprev col nextprev d-flex align-items-center justify-content-between">
-      <a class="prev" href="slide-9-pertemuan1.html">❮ Back</a>
-      <div class="no-slide">10</div>
-      <a class="next" href="slide-11.html">Next ❯</a>
+      <a class="prev" href="slide-47.html">❮ Back</a>
+      <div class="no-slide">48</div>
+      <a class="next" href="slide-49.html">Next ❯</a>
     </div>
   </footer>
   <!-- End Footer -->

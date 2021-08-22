@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="height: 100%;">
+<html lang="en">
 
 <head>
   <!-- Required meta tags -->
@@ -27,7 +27,7 @@
     <div class="container">
       <div class="row subject">
         <div class="col text-center p-2">
-          <h4 class="m-0">3. Menyatakan Suatu Vektor</h4>
+          <h2 class="m-0">Contoh Soal 2</h2>
         </div>
       </div>
       <div class="row mb-3">
@@ -90,16 +90,19 @@
       <!-- Content -->
       <div class="row mb-2 mx-3 justify-content-center">
         <!-- materi -->
-        <div class="col-12 materi my-4">
-          <div class="card mb">
+        <div class="col materi my-4">
+          <div class="card">
             <div class="card-body">
-              <p class="card-text">
-                Untuk menyatakan suatu vektor kita gunakan sumbu cartesius dengan sumbu mendatar adalah sumbu x dan
-                sumbu vertikal adalah sumbu y, vektor satuan sumbu x diberi lambang <b>i</b> dan vektor satuan pada sumbu y
-                diberi lambang <b>j</b>.
+              <p class="card-text">                
+                Latifah menyiram tanaman di depan rumah. Mula-mula Latifah berjalan menyiram ke arah utara hingga
+                berpindah sejauh 2 m, lalu Latifah berbelok 30&#176; dari arah timur dan berpindah sejauh 4 m, setelah
+                itu
+                Latifah berjalan menyiram tanaman kearah utara dan berpindah sejauh 3 m sehingga tanaman Latifah sudah
+                tersiram semua. Hitunglah resultan perpindahan Latifah!
               </p>
+              <h4 class="card-title fw-bold">Visualisasi Masalah</h4>
               <div class="text-center p-3">
-                <img class="card-img-top" src="https://imgur.com/DNKBVrn.png" style="width: 100%;cursor:pointer"
+                <img class="card-img-top" src="https://imgur.com/xgHnk5f.png" style="width: 70%;cursor:pointer"
                   onclick="onClick(this)" alt="rumus">
                 <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
                 <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
@@ -109,10 +112,66 @@
                   </div>
                 </div>
               </div>
+
+              <h4 class="card-title fw-bold">Deskribsi Masalah</h4>
               <p class="card-text">
-                Gambar di atas adalah sekumpulan anak yang sedang melakukan permainan Balogo. Bagaimana gerakan logo
-                setelah dipukul jika dilihat dari samping?
+                Diketahui : <br>
+                r<small>1y</small> = 2 m<br>
+                r<small>3y</small> = 3 m<br>
+                r<small>2</small> = 4 m<br>
+                &theta; = 30&#176;<br>
+                Ditanya :<br>
+                Hitunglah resultan perpindahan Latifah!
               </p>
+
+              <h4 class="card-title fw-bold">Merencanakan Solusi</h4>
+              <p class="card-text">
+                r<small>2x</small> = r<small>2</small> cos&theta;
+                r<small>2y</small> = r<small>2</small> sin&theta;
+                r = r x i + r y j
+              </p>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/wMkU8I2.png" style="width: 90%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+
+              <h4 class="card-title fw-bold">Melaksanakan Solusi</h4>
+              <p class="card-text">
+                r<small>2x</small> = r<small>2</small> cos&theta; = 4  cos 30&deg; = 2&#8730;3i <br>
+                r<small>2y</small> = r<small>2</small> sin&theta; = 4 sin 30&deg; = 2j<br>
+                r<small>x</small> = r<small>2x</small> = 2&#8730;3 i<br>
+                r<small>y</small> = r<small>1y</small> + r<small>2y</small> + r<small>3y</small> = 3j + 2j + 3j = 8j <br>
+                r = r x i + r yj<br>
+                r = 2&#8730;3 i + 8j <br>
+                Resultan perpindahannya adalah
+              </p>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/IlkX0Qp.png" style="width: 80%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="card-title fw-bold">Evaluasi Solusi</h4>
+              <p class="card-text">
+                Perpindahan Latifah dari posisi awal adalah 8,72 meter. <br>
+                (Tepat, rasional, kompleks)
+              </p>
+
+
             </div>
           </div>
         </div>
@@ -126,9 +185,9 @@
   <!-- Footer -->
   <footer class="row mx-auto">
     <div class="col nextprev col nextprev d-flex align-items-center justify-content-between">
-      <a class="prev" href="slide-26.html">❮ Back</a>
-      <div class="no-slide">27</div>
-      <a class="next" href="slide-28.html">Next ❯</a>
+      <a class="prev" href="slide-42.html">❮ Back</a>
+      <div class="no-slide">43</div>
+      <a class="next" href="slide-44.html">Next ❯</a>
     </div>
   </footer>
   <!-- End Footer -->

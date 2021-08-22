@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+
+  <!-- W3Shcool CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- MyCSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- Subject -->
+    <div class="container">
+      <div class="row subject">
+        <div class="col text-center p-2">
+          <h2 class="m-0">Pertemuan 4</h2>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col" style="background-color: #ffa0d0; width: 360px; height: 20px; border-radius: 0 0 8px 8px">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End Subject -->
+  </header>
+  <!-- End header -->
+
+  <nav class="py-2 px-3 myMenu ms-2 d-none">
+    <div class="myMenu-child">
+      <!-- closed btn  -->
+      <div id="menu-closer" class="menu-closer d-inline-block mb-2 d-none" onclick="menu()">
+        <img src="../img/close-black.svg" alt="menu-closer" width="16px">
+      </div>
+      <!-- end closed btn  -->
+      <a class="btn mb-2" href="slide-2.html" role="button">KATA PENGANTAR</a>
+      <a class="btn mb-2" href="slide-4.html" role="button">PETUNJUK PENGGUNAAN</a>
+      <a class="btn mb-2" href="slide-6-KD.html" role="button">KD</a>
+      <a class="btn mb-2" href="slide-7.petaKonsep.html" role="button">PETA KONSEP</a>
+      <a class="btn mb-2" href="slide-8-materi.html" role="button">MATERI</a>
+      <a class="btn mb-2 btn-aktif" href="slide-46-pertemuan4.html" role="button">SIMULASI</a>
+      <a class="btn mb-2" href="slide-47.html" role="button">UJI KOMPETENSI</a>
+      <a class="btn mb-2" href="slide-53-referensi.html" role="button">REFERENSI</a>
+      <a class="btn mb-2" href="slide-54-penyusun.html" role="button">PENYUSUN</a>
+    </div>
+
+  </nav>
+
+  <div class="container opener-btn">
+    <div id="menu-opener" class="menu-opener d-inline-block mb-3" onclick="menu()">
+      <img src="../img/menu.svg" alt="menu-opener" width="24px">
+    </div>
+  </div>
+
+  <div class="container music-on-btn text-end d-none">
+    <div id="music-on" class="music-on mb-3 d-inline-block" onclick="musicOff()">
+      <img src="../img/volume-on.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+  <div class="container music-off-btn text-end">
+    <div id="music-off" class="music-off mb-3 d-inline-block" onclick="musicOn()">
+      <img src="../img/volume-off.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+
+  <div class="music">
+    <audio id="music" autoplay loop>
+      <source src="https://res.cloudinary.com/dgpikum8r/video/upload/v1629515971/music_v6rnwy.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+
+  <!-- Main -->
+  <main class="slide-2" id="slide-2">
+    <div class="container">
+      <!-- Content -->
+      <div class="row mb-2 mx-3 justify-content-center">
+        <!-- materi -->
+        <div class="col materi my-4">
+          <div class="text-center p-3">
+            <img class="card-img-top" src="https://imgur.com/rrztd5L.png" style="width: 70%;cursor:pointer"
+              onclick="onClick(this)" alt="rumus">
+            <figcaption>(Traditional Games Return, 2020)</figcaption>
+            <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+              <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+              <div class="w3-modal-content w3-animate-zoom">
+                <img id="img01" style="width:100%">
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">
+                Permainan balogo adalah permainan tradisional dari Kalimantan Selatan menggunakan logo yang dipukul agar
+                meluncur dilantai dan mengenai logo yang lain. Sebuah logo yang meluncur memberikan pergerakan dan
+                menghasilkan suatu perpindahan. Bagaimana pengaruh sudut apit terhadap panjang resultan logo yang saling
+                bertumbukan?
+              </p>
+            </div>
+          </div>
+
+          <p class="fw-bold mt-3">
+            Indikator Pencapaian Kompetensi <br>
+            (IPK)<br><br>
+            4.3.1 Membuat rumusan hipotesis pada percobaan resultan vektor sebidang.<br>
+            4.3.2 Mengidentifikasi variabel dan definisi operasional variabel pada percobaan resultan vektor
+            sebidang.<br>
+            4.3.3 Menganalisis data hasil percobaan pada percobaan resultan vektor sebidang.<br>
+            4.3.4 Membuat kesimpulan data hasil percobaan pada percobaan resultan vektor sebidang.<br>
+            4.3.5 Mempresentasikan data hasil percobaan pada percobaan resultan vektor sebidang dan makna fisisnya.
+          </p>
+        </div>
+
+
+        <div class="card">
+          <div class="card-body">
+            <h3 class="card-title fw-bold">A. Tujuan Percobaan</h3>
+            <p class="card-text">
+              Untuk mengetahui pengaruh sudut apit vektor terhadap resultan vektor.
+            </p>
+
+            <h3 class="card-title fw-bold">B. Alat dan bahan</h3>
+            <p class="card-text">
+              Untuk mengetahui pengaruh sudut apit vektor terhadap resultan vektor.
+            </p>
+            <ol>
+              <li>Laptop/handphone/zoom/g-meet.</li>
+              <li>
+                Mengakses web <br> <a href="https://phet.colorado.edu/in/simulation/vector-addition"
+                  target="_blank" style="color: blue;"></a>Click Link
+              </li>
+              <li>LKPD berbantuan phet simulation.</li>
+            </ol>
+
+            <h3 class="card-title fw-bold">C. Rumusan Masalah</h3>
+            <p class="card-text">
+              Bagaimanakah pengaruh sudut apit vektor terhadap resultan vektor?
+            </p>
+
+            <h3 class="card-title fw-bold">D. Langkah Kerja</h3>
+            <p class="card-text">
+              Bagaimanakah pengaruh sudut apit vektor terhadap resultan vektor?
+            </p>
+            <ol>
+              <li>Hidupkan HP/komputer/laptop terlebih dahulu.</li>
+              <li>
+                Klik link aplikasi phet yang sudah diberikan sampai terlihat pada gambar di bawah. <br>
+                <div class="text-center p-3">
+                  <img class="card-img-top" src="https://imgur.com/Y0bAEwK.png" style="width: 100%;cursor:pointer"
+                    onclick="onClick(this)" alt="rumus">
+                  <figcaption><b>Gambar 4.1</b> Tampilan awal phet percobaan vektor</figcaption>
+                  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                      <img id="img01" style="width:100%">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                Setelah itu klik tombol ‘’play’’ sehingga muncul tampilan berikut pilih explore 2D. <br>
+                <div class="text-center p-3">
+                  <img class="card-img-top" src="https://imgur.com/08wpPg4.png" style="width: 100%;cursor:pointer"
+                    onclick="onClick(this)" alt="rumus">
+                  <figcaption><b>Gambar 4.2</b> Tampilan setelah diklik play.</figcaption>
+                  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                      <img id="img01" style="width:100%">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                Silahkan klik gambar yang bertuliskan anak panah atau lambang vektor a dengan jarak 10 dan vektor b
+                dengan jarak 15 lalu atur sudut apitnya 90&#176;. <br>
+                <div class="text-center p-3">
+                  <img class="card-img-top" src="https://imgur.com/AU99nyy.png" style="width: 100%;cursor:pointer"
+                    onclick="onClick(this)" alt="rumus">
+                  <figcaption><b>Gambar 4.3</b> Tampilan ketika diklik anak panah atau vektor.</figcaption>
+                  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                      <img id="img01" style="width:100%">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                Klik value dan sum di samping kanan sehingga didapatkan nilai resultan perpindahan. <br>
+                <div class="text-center p-3">
+                  <img class="card-img-top" src="https://imgur.com/eCIQsq0.png" style="width: 100%;cursor:pointer"
+                    onclick="onClick(this)" alt="rumus">
+                  <figcaption><b>Gambar 4.4</b> Tampilan ketika diklik value dan sum.</figcaption>
+                  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                      <img id="img01" style="width:100%">
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                Ulangi langkah 4 dan 5 untuk sudut apit yang berbeda 2 kali dengan besar sudut apit antara 0&#176; sampai 90&#176;.
+              </li>
+              <li>
+                Tuliskan hasil pengukuran pada tabel hasil pengamatan. <br>
+                <div class="text-center p-3">
+                  <img class="card-img-top" src="https://imgur.com/UHztUIV.png" style="width: 100%;cursor:pointer"
+                    onclick="onClick(this)" alt="rumus">
+                  <figcaption><b>Gambar 4.5</b> Tabel hasil pengamatan.</figcaption>
+                  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                    <div class="w3-modal-content w3-animate-zoom">
+                      <img id="img01" style="width:100%">
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ol>
+          </div>
+        </div>
+
+        <!-- end materi -->
+      </div>
+      <!-- End Content -->
+    </div>
+  </main>
+  <!-- End Main -->
+
+  <!-- Footer -->
+  <footer class="row mx-auto">
+    <div class="col nextprev col nextprev d-flex align-items-center justify-content-between">
+      <a class="prev" href="slide-45.html">❮ Back</a>
+      <div class="no-slide">46</div>
+      <a class="next" href="slide-47.html">Next ❯</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+  <script src="../js/myFunction.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

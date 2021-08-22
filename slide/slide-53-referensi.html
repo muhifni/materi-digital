@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+
+  <!-- W3Shcool CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- MyCSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <title>Hello, world!</title>
+
+  <style>
+    .true-modal .modal-header,
+    .true-modal .modal-footer {
+      background-color: hsl(116deg 75% 60%);
+    }
+
+    .true-modal .modal-body {
+      background-color: hsl(116deg 100% 81%);
+    }
+
+    .wrong-modal .modal-header,
+    .wrong-modal .modal-footer {
+      background-color: hsl(0deg 60% 48%);
+    }
+
+    .wrong-modal .modal-body {
+      background-color: hsl(0deg 80% 60%);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- Subject -->
+    <div class="container">
+      <div class="row subject">
+        <div class="col text-center p-2">
+          <h2 class="m-0">Referensi</h2>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col" style="background-color: #ffa0d0; width: 360px; height: 20px; border-radius: 0 0 8px 8px">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End Subject -->
+  </header>
+  <!-- End header -->
+
+  <nav class="py-2 px-3 myMenu ms-2 d-none">
+    <div class="myMenu-child">
+      <!-- closed btn  -->
+      <div id="menu-closer" class="menu-closer d-inline-block mb-2 d-none" onclick="menu()">
+        <img src="../img/close-black.svg" alt="menu-closer" width="16px">
+      </div>
+      <!-- end closed btn  -->
+      <a class="btn mb-2" href="slide-2.html" role="button">KATA PENGANTAR</a>
+      <a class="btn mb-2" href="slide-4.html" role="button">PETUNJUK PENGGUNAAN</a>
+      <a class="btn mb-2" href="slide-6-KD.html" role="button">KD</a>
+      <a class="btn mb-2" href="slide-7.petaKonsep.html" role="button">PETA KONSEP</a>
+      <a class="btn mb-2" href="slide-8-materi.html" role="button">MATERI</a>
+      <a class="btn mb-2" href="slide-46-pertemuan4.html" role="button">SIMULASI</a>
+      <a class="btn mb-2" href="slide-47.html" role="button">UJI KOMPETENSI</a>
+      <a class="btn mb-2 btn-aktif" href="slide-53-referensi.html" role="button">REFERENSI</a>
+      <a class="btn mb-2" href="slide-54-penyusun.html" role="button">PENYUSUN</a>
+    </div>
+
+  </nav>
+
+  <div class="container opener-btn">
+    <div id="menu-opener" class="menu-opener d-inline-block mb-3" onclick="menu()">
+      <img src="../img/menu.svg" alt="menu-opener" width="24px">
+    </div>
+  </div>
+
+  <div class="container music-on-btn text-end d-none">
+    <div id="music-on" class="music-on mb-3 d-inline-block" onclick="musicOff()">
+      <img src="../img/volume-on.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+  <div class="container music-off-btn text-end">
+    <div id="music-off" class="music-off mb-3 d-inline-block" onclick="musicOn()">
+      <img src="../img/volume-off.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+
+  <div class="music">
+    <audio id="music" autoplay loop>
+      <source src="https://res.cloudinary.com/dgpikum8r/video/upload/v1629515971/music_v6rnwy.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+
+  <!-- Main -->
+  <main class="slide-2" id="slide-2">
+    <div class="container">
+      <!-- Content -->
+      <div class="row mb-2 mx-3 justify-content-center">
+        <!-- materi -->
+        <div class="col materi my-4">
+          <div class="card">
+            <div class="card-body">
+              <ul>
+                <li>
+                  (2021). Diambil Juli 17, 2021, dari Alibaba.com:
+                  <a class="p-0" style="color: blue;"
+                    href="https://indonesian.alibaba.com/product-detail/47cm-mini-soldier-parachute-funny-toy-children-outdoor-game-hand-throwing-play-fly-parachute-sport-for-children-toy-1600238877191.html?spm=a2700.8699010.29.57.10503ce2eedKUp">
+                    https://indonesian.alibaba.com/product-detail/47cm-mini-soldier-parachute-funny-toy-children-outdoor-game-hand-throwing-play-fly-parachute-sport-for-children-toy-1600238877191.html?spm=a2700.8699010.29.57.10503ce2eedKUp.
+                  </a>
+                </li>
+                <li>
+                  Bank Sinarmas. (2018, Juli 18). Diambil Juli 17, 2021, dari Simak 10 Jam Tangan Populer Yang Bakal
+                  Bikin Style Kamu Lebih Keren:
+                  <a class="p-0" style="color: blue;"
+                    href="https://www.banksinarmas.com/biasakansekarang/simak-10-jam-tangan-populer-yang-bakal-bikin-style-kamu-lebih-keren/">
+                    https://www.banksinarmas.com/biasakansekarang/simak-10-jam-tangan-populer-yang-bakal-bikin-style-kamu-lebih-keren/.
+                  </a>
+                </li>
+                <li>
+                  Hermawan, C. A. (2015). Kumpulan Materi Panduan Terarah Fisika SMA/SMK. Bandung: Kaifa Learning. <br>
+                  Inews magazine, (2019, Mei 26). Serunya Main Balogo, Permainan Tradisional Khas Kalimantan Selatan
+                  Part 01 [Video file]. Diambil dari
+                  <a class="p-0" style="color: blue;" href="https://youtu.be/W2jlPCJRkko">
+                    https://youtu.be/W2jlPCJRkko.
+                  </a>
+                </li>
+                <li>
+                  Kanginan, Marthen. (2016). Fisika untuk SMA/MA Kelas X.Jakarta:Erlangga. <br>
+                  Karusuke. (2019, April 1). Diambil Juli 12, 2021, dari Benarkah Mobil Matik Tidak Boleh Didorong?:
+                  <a class="p-0" style="color: blue;"
+                    href="https://kurusuke.red/benarkah-mobil-matik-tidak-boleh-didorong/">
+                    https://kurusuke.red/benarkah-mobil-matik-tidak-boleh-didorong/.
+                  </a>
+                </li>
+                <li>
+                  Pngwing. (n.d.). Diambil Juli 13, 2021, dari Ilustrasi pita pengukur kuning, Pita Pengukur Pengukuran
+                  Alat ukur, pita pengukur, bermacam-macam, sudut, lain-lain png:
+                  <a class="p-0" style="color: blue;" href="https://www.pngwing.com/id/free-png-nqfkw">
+                    https://www.pngwing.com/id/free-png-nqfkw.
+                  </a>
+                </li>
+                <li>
+                  Rezkisari, I. (2015, Januari 11). Republika. Diambil Juli 13, 2021, dari
+                  <a class="p-0" style="color: blue;"
+                    href="https://m.republika.co.id/berita/nihfqp/sering-menimbang-berat-badan-buat-diet-berhasil">
+                    https://m.republika.co.id/berita/nihfqp/sering-menimbang-berat-badan-buat-diet-berhasil.
+                  </a>
+                </li>
+                <li>
+                  Traditional Games Return. (2020, Mei 1). Diambil Juli 12, 2021, dari Asyiknya Bermain Balogo,
+                  Permainan Tradisional Khas Suku Banjar:
+                  <a class="p-0" style="color: blue;"
+                    href="https://tgrcampaign.com/read/169/asyiknya-bermain-balogo-permainan-tradisional-khas-suku-banjar">
+                    https://tgrcampaign.com/read/169/asyiknya-bermain-balogo-permainan-tradisional-khas-suku-banjar.
+                  </a>
+                </li>
+                <li>
+                  Tribun. (2018, Agustus 17). Diambil juli 13, 2021, dari :
+                  <a class="p-0" style="color: blue;"
+                    href="https://blog.tribunjualbeli.com/14794/tak-boleh-asal-mendorong-mobil-mogok-ternyata-ada-aturannya-lho">
+                    https://blog.tribunjualbeli.com/14794/tak-boleh-asal-mendorong-mobil-mogok-ternyata-ada-aturannya-lho.
+                  </a>
+                </li>
+                <li>
+                  Wahono, Edi. (2016). Big Bank Soal +Bahas Fisika SMA/MA Kelas 1,2,&3.Jakarta;Wahyumedia. <br>
+                  Wijaya, S. (2020, Desember 22). insulteng.com. Diambil Juli 13, 2021, dari Pesawat Adam Air Jatuh di
+                  Selat Makassar:
+                  <a class="p-0" style="color: blue;"
+                    href="https://insulteng.pikiran-rakyat.com/nasional/pr-901151560/pesawat-adam-air-jatuh-di-selat-makassar-102-orang-meninggal-begini-kisahnya?page=all">
+                    https://insulteng.pikiran-rakyat.com/nasional/pr-901151560/pesawat-adam-air-jatuh-di-selat-makassar-102-orang-meninggal-begini-kisahnya?page=all.
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- end materi -->
+      </div>
+
+
+      <!-- End Content -->
+    </div>
+  </main>
+  <!-- End Main -->
+
+  <!-- Footer -->
+  <footer class="row mx-auto">
+    <div class="col nextprev col nextprev d-flex align-items-center justify-content-between">
+      <a class="prev" href="slide-52.html">❮ Back</a>
+      <div class="no-slide">53</div>
+      <a class="next" href="slide-54-penyusun.html">Next ❯</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+  <script src="../js/myFunction.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>

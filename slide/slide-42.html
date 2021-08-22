@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+
+  <!-- W3Shcool CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- MyCSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- Subject -->
+    <div class="container">
+      <div class="row subject">
+        <div class="col text-center p-2">
+          <h2 class="m-0">Contoh Soal 1</h2>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col" style="background-color: #ffa0d0; width: 360px; height: 20px; border-radius: 0 0 8px 8px">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End Subject -->
+  </header>
+  <!-- End header -->
+
+  <nav class="py-2 px-3 myMenu ms-2 d-none">
+    <div class="myMenu-child">
+      <!-- closed btn  -->
+      <div id="menu-closer" class="menu-closer d-inline-block mb-2 d-none" onclick="menu()">
+        <img src="../img/close-black.svg" alt="menu-closer" width="16px">
+      </div>
+      <!-- end closed btn  -->
+      <a class="btn mb-2" href="slide-2.html" role="button">KATA PENGANTAR</a>
+      <a class="btn mb-2" href="slide-4.html" role="button">PETUNJUK PENGGUNAAN</a>
+      <a class="btn mb-2" href="slide-6-KD.html" role="button">KD</a>
+      <a class="btn mb-2" href="slide-7.petaKonsep.html" role="button">PETA KONSEP</a>
+      <a class="btn mb-2" href="slide-8-materi.html" role="button">MATERI</a>
+      <a class="btn mb-2" href="slide-46-pertemuan4.html" role="button">SIMULASI</a>
+      <a class="btn mb-2" href="slide-47.html" role="button">UJI KOMPETENSI</a>
+      <a class="btn mb-2" href="slide-53-referensi.html" role="button">REFERENSI</a>
+      <a class="btn mb-2" href="slide-54-penyusun.html" role="button">PENYUSUN</a>
+    </div>
+
+  </nav>
+
+  <div class="container opener-btn">
+    <div id="menu-opener" class="menu-opener d-inline-block mb-3" onclick="menu()">
+      <img src="../img/menu.svg" alt="menu-opener" width="24px">
+    </div>
+  </div>
+
+  <div class="container music-on-btn text-end d-none">
+    <div id="music-on" class="music-on mb-3 d-inline-block" onclick="musicOff()">
+      <img src="../img/volume-on.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+  <div class="container music-off-btn text-end">
+    <div id="music-off" class="music-off mb-3 d-inline-block" onclick="musicOn()">
+      <img src="../img/volume-off.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+
+  <div class="music">
+    <audio id="music" autoplay loop>
+      <source src="https://res.cloudinary.com/dgpikum8r/video/upload/v1629515971/music_v6rnwy.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+
+  <!-- Main -->
+  <main class="slide-2" id="slide-2">
+    <div class="container">
+      <!-- Content -->
+      <div class="row mb-2 mx-3 justify-content-center">
+        <!-- materi -->
+        <div class="col materi my-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text">
+                Sebuah logo dipukul hingga menumbuk logo lawan yang berjarak 8 m dari titik awal dipukul. Kemudian logo
+                terpental berbelok sejauh 5 m. Mungkinkah resultan kedua perpindahan tersebut memberikan hasil sebesar 2
+                m; 3 m; 7 m; 10 m; dan 15 m?
+              </p>
+
+              <h4 class="card-title fw-bold">Visualisasi Masalah</h4>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/vxsCRCD.png" style="width: 70%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="card-title fw-bold">Visualisasi Masalah</h4>
+              <p class="card-text">
+                Diketahui : <br>
+                r1 = 8 m<br>
+                r2 = 5 m<br>
+                Ditanya :<br>
+                Kemungkinan resultan perpindahan?
+              </p>
+
+              <h4 class="card-title fw-bold">Merencanakan Solusi</h4>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/gqgWLNn.png" style="width: 60%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="card-title fw-bold">Melaksanakan Solusi</h4>
+              <p class="card-text">Vektor resultan antara vektor perpindahan logo 5 m dan 8 m memiliki nilai <b>R</b>
+                sebagai
+                berikut
+              </p>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/kXicyZA.png" style="width: 90%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+              <h4 class="card-title fw-bold">Evaluasi Solusi</h4>
+              <p class="card-text">
+                Jadi, resultan perpindahan tidak mungkin kurang dari R<small>min</small> = 3 m atau lebih dari
+                R<small>maks</small> = 13
+                m, resultan yang tidak mungkin adalah 2 m dan 15 m. <br>
+                (tepat, rasional, dan kompleks)
+              </p>
+
+              <h3 class="card-title text-center fw-bold">LATIHAN TERBIMBING</h3>
+              <p class="card-text">
+                Anisa bermain mobil listrik di halaman rumah mula-mula bergerak lurus ke arah utara dengan perpindahan
+                sebesar 2 m, setelah itu dia berbelok ke tenggara dengan perpindahan sebesar 4 m, mungkinkah resultan
+                kedua perpindahan tersebut memberikan hasil sebesar 1 m; 2 m; 6 m; 7 m; dan 8 m?
+              </p>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/gxBLfCg.png" style="width: 60%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="card-title text-center fw-bold">LATIHAN LANJUTAN</h3>
+              <p class="card-text">
+                Ghina dan Ayahnya bermain bom-bom car di Trans Studio Duta Mall mula-mula mereka mengendarai bom-bom car
+                kearah utara dengan perpindahan sebesar 5 m setelah itu berbelok ke arah barat daya dengan perpindahan
+                sebesar 4 m, mungkinkah resultan kedua perpindahan tersebut memberikan hasil sebesar 1 m; 2 m; 5 m; 8 m;
+                dan 10 m?
+              </p>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/FIsscaYl.png" style="width: 80%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+              <h3 class="card-title text-center">Menggunakan komponen vektor</h3>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/WtAgn3O.png" style="width: 80%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                Pada saat hari jadi kota Banjarmasin tanggal 24 September diadakan parade jukung hias. Salah satu Jukung
+                hias tersebut menyeberangi sungai martapura di siring untuk sampai ke tepian sungai. Jika dilihat dari
+                atas, karena arus sungai yang cukup deras maka terlihat gerakan jukung hias sebagai berikut.
+              </p>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/0FNCvoF.png" style="width: 80%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/FbElVVQ.png" style="width: 40%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 1.10</b> Mr. Budi mendorong mobil. | (Karusuke, 2019)</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                Vektor kecepatan jukung hias jika dimasukan ke dalam bidang koordinat kartesius maka:
+              </p>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/tt3LEg5.png" style="width: 70%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <figcaption><b>Gambar 3.3</b> Proyeksi vektor kecepatan jukung hias.</figcaption>
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+              <p class="card-text">
+                Dengan nilai V<small>xi</small> dan V<small>yj</small> adalah Tiap vektor dinyatakan dalam vektor-vektor
+                satuan <i></i> dan <b>j</b>
+              </p>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/0FCYqiE.png" style="width: 90%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 3.3</b> Proyeksi vektor kecepatan jukung hias.</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/uhxWIwm.png" style="width: 90%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 3.3</b> Proyeksi vektor kecepatan jukung hias.</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+
+              <p class="card-text">Vektor resultan kecepatan jukung hias dapat dinyatakan</p>
+              <div class="text-center p-3">
+                <img class="card-img-top" src="https://imgur.com/xBRBTjL.png" style="width: 90%;cursor:pointer"
+                  onclick="onClick(this)" alt="rumus">
+                <!-- <figcaption><b>Gambar 3.3</b> Proyeksi vektor kecepatan jukung hias.</figcaption> -->
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                    <img id="img01" style="width:100%">
+                  </div>
+                </div>
+              </div>
+              <p class="card-text" style="text-align: end;">(Kanginan, Marthen, 2016)</p>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- end materi -->
+      </div>
+      <!-- End Content -->
+    </div>
+  </main>
+  <!-- End Main -->
+
+  <!-- Footer -->
+  <footer class="row mx-auto">
+    <div class="col nextprev col nextprev d-flex align-items-center justify-content-between">
+      <a class="prev" href="slide-41.html">❮ Back</a>
+      <div class="no-slide">42</div>
+      <a class="next" href="slide-43.html">Next ❯</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+  <script src="../js/myFunction.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
