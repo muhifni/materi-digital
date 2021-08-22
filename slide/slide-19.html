@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
+
+  <!-- W3Shcool CSS -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <!-- MyCSS -->
+  <link rel="stylesheet" href="../css/style.css" />
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <!-- header -->
+  <header>
+    <!-- Subject -->
+    <div class="container">
+      <div class="row subject">
+        <div class="col text-center p-2">
+          <h4 class="m-0">Contoh Soal 1</h4>
+        </div>
+      </div>
+      <div class="row mb-3">
+        <div class="col" style="background-color: #ffa0d0; width: 360px; height: 20px; border-radius: 0 0 8px 8px">
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- End Subject -->
+  </header>
+  <!-- End header -->
+
+  <nav class="py-2 px-3 myMenu ms-2 d-none">
+    <div class="myMenu-child">
+      <!-- closed btn  -->
+      <div id="menu-closer" class="menu-closer d-inline-block mb-2 d-none" onclick="menu()">
+        <img src="../img/close-black.svg" alt="menu-closer" width="16px">
+      </div>
+      <!-- end closed btn  -->
+      <a class="btn mb-2" href="slide-3.html" role="button">KATA PENGANTAR</a>
+      <a class="btn mb-2" href="slide-4.html" role="button">PETUNJUK PENGGUNAAN</a>
+      <a class="btn mb-2" href="slide-6.html" role="button">KD</a>
+      <a class="btn mb-2" href="#" role="button">PETA KONSEP</a>
+      <a class="btn btn-aktif mb-2" href="#" role="button">MATERI</a>
+      <a class="btn mb-2" href="#" role="button">SIMULASI</a>
+      <a class="btn mb-2" href="#" role="button">UJI KOMPETENSI</a>
+      <a class="btn mb-2" href="#" role="button">REFERENSI</a>
+      <a class="btn mb-2" href="#" role="button">PENYUSUN</a>
+    </div>
+
+  </nav>
+
+  <div class="container opener-btn">
+    <div id="menu-opener" class="menu-opener d-inline-block mb-3" onclick="menu()">
+      <img src="../img/menu.svg" alt="menu-opener" width="24px">
+    </div>
+  </div>
+
+  <div class="container music-on-btn text-end d-none">
+    <div id="music-on" class="music-on mb-3 d-inline-block" onclick="musicOff()">
+      <img src="../img/volume-on.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+  <div class="container music-off-btn text-end">
+    <div id="music-off" class="music-off mb-3 d-inline-block" onclick="musicOn()">
+      <img src="../img/volume-off.svg" alt="music-on" width="24px">
+    </div>
+  </div>
+
+  <div class="music">
+    <audio id="music" autoplay loop>
+      <source src="https://res.cloudinary.com/dgpikum8r/video/upload/v1629515971/music_v6rnwy.mp3" type="audio/mpeg">
+    </audio>
+  </div>
+
+
+  <!-- Main -->
+  <main class="slide-2" id="slide-2">
+    <div class="container">
+      <!-- Content -->
+      <div class="row mb-2 mx-3 justify-content-center">
+        <!-- materi -->
+        <div class="col-sm-6 materi my-4">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-text" style="line-height: 1.8;">Bu Ani pergi ke pusat perbelanjaan Hypermart di Duta Mall. Bu Ani menggunakan trolly
+                untuk memudahkan membawa bahan belanjaan. Pertama-tama Bu Ani mendorong trolly ke arah timur dengan gaya
+                dorong sebesar <b>A</b> setelah itu dia berhenti karena ingin membeli sarden. Setelah memasukkan
+                beberapa kaleng
+                sarden ke trolly, tidak jauh dari sana Bu Ani melihat potongan harga minyak goreng yang tinggal satu
+                buah.
+                Dengan segera Bu Ani mendorong trolly dengan arah yang sama dengan gaya dorongan yang lebih kuat sebesar
+                2<b>A</b> hingga akhirnya bu Ani mendapatkan potongan harga minyak goreng tersebut. Gambarkanlah vektor
+                gaya
+                dorong Bu Ani dari awal berbelanja mendorong trolly hingga mendapatkan potongan harga minyak goreng?</p>
+            </div>            
+          </div>
+        </div>
+        <!-- end materi -->
+      </div>
+      <!-- End Content -->
+    </div>
+  </main>
+  <!-- End Main -->
+
+  <!-- Footer -->
+  <footer class="row mx-auto">
+    <div class="col nextprev col nextprev d-flex align-items-center justify-content-between">
+      <a class="prev" href="slide-18.html">❮ Back</a>
+      <div class="no-slide">19</div>
+      <a class="next" href="slide-20.html">Next ❯</a>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+
+
+  <script src="../js/myFunction.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+  <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+</body>
+
+</html>
